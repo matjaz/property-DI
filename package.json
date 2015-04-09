@@ -1,0 +1,13 @@
+{
+  "name": "property-DI",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Matjaz Lipus",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-plumber": "^1.0.0",
+    "gulp-typescript": "^2.6.0",
+    "typescript": "^1.5.0-alpha"
+  }
+}
