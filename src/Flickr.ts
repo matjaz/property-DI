@@ -1,7 +1,7 @@
 import {inject} from '../lib/di'
 
 export class HttpClient {
-  request(query) {
+  request(query: String) {
     console.log(`requesting... ${query}`);
   }
 }

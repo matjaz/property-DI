@@ -5,5 +5,5 @@ Simple POC for dependency injecton using properties injecton.
 
 Example
 
-    gulp build
+    gulp
     node dist/src/example.js

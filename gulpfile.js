@@ -13,3 +13,5 @@ gulp.task('build', function () {
     }))
     .pipe(gulp.dest('dist/'));
 });
+
+gulp.task('default', ['build']);
