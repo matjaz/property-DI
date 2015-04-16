@@ -9,6 +9,7 @@ gulp.task('build', function () {
       target: 'ES5',
       module: 'commonjs',
       declarationFiles: true,
+      emitDecoratorMetadata: true,
       typescript: require('typescript')
     }))
     .pipe(gulp.dest('dist/'));

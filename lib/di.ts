@@ -1,3 +1,5 @@
+import 'reflect-metadata';
+
 export class Container {
   static types = new Map();
   
@@ -12,10 +14,10 @@ export class Container {
   }
 }
 
-export function inject(Type = null) {
+export function inject(Type?) {
   return function(target, key) {
-    if (Type === null) {
-      Type = target.constructor.__types[key];
+    if (!Type) {
+      Type = Reflect.getMetadata('design:type', target, key);
     }
     Object.defineProperty(target, key, {
       enumerable: true,
