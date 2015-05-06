@@ -1,3 +1,5 @@
+/// <reference path="../node_modules/reflect-metadata/Reflect.ts"/>
+
 import 'reflect-metadata';
 
 export class Container {
