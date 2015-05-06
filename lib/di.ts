@@ -5,11 +5,10 @@ export class Container {
   
   static get(Type):any {
     var obj = this.types.get(Type);
-    if (obj) {
-      return obj;
+    if (!obj) {
+      obj = new Type();
+      this.types.set(Type, obj);
     }
-    obj = new Type();
-    this.types.set(Type, obj);
     return obj;
   }
 }
